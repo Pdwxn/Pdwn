@@ -36,11 +36,11 @@ https://github.com/gazijarin/Gazi
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
 | Deep purple    | ![#190717](https://via.placeholder.com/10/190717?text=+) `#190717` |
-| Light Purple   | ![#3E103C](https://via.placeholder.com/10/3e103C?text=+) `#3E103C` |
+| Light Purple   | ![#3E103C](https://via.placeholder.com/10/3e103c?text=+) `#3E103C` |
 | Lightest Purple| ![#5a1857](https://via.placeholder.com/10/5a1857?text=+) `#5a1857` |
 | Slate          | ![#a8b2d1](https://via.placeholder.com/10/a8b2d1?text=+) `#a8b2d1` |
 | Light Slate    | ![#a8b2d1](https://via.placeholder.com/10/a8b2d1?text=+) `#a8b2d1` |
 | Lightest Slate | ![#ccd6f6](https://via.placeholder.com/10/fef6d4?text=+) `#FEF6D4` |
 | White          | ![#e6f1ff](https://via.placeholder.com/10/e6f1ff?text=+) `#e6f1ff` |
-| Yellow         | ![#FFF764](https://via.placeholder.com/10/fff764?text=+) `#FFF764` |
+| Yellow         | ![#FFF764](https://via.placeholder.com/10/FFF764?text=+) `#FFF764` |
 # Pdwn
