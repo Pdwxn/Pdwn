@@ -72,7 +72,7 @@ b {
   #intro {
     min-height: unset;
     padding-left: unset;
-    padding-top: unset;
+    padding-top: 11rem;
     margin: 0;
     align-items: center;
   }

@@ -84,7 +84,7 @@ const JobList = () => {
   const experienceItems = {
     Ticsa: {
       jobTitle: "Full-Stack Developer @",
-      key: 1,
+      key: "Ticsa",
       duration: "FEB 2024 - JUL 2024",
       desc: [
         "Desarrollé y fui parte integral de la sección de RRHH de la WebApp tipo CRM, creando componentes reutilizables para esta misma al igual que scripts automaticos para la creación de documentos.",
@@ -93,7 +93,7 @@ const JobList = () => {
     },
     Dropsher: {
       jobTitle: "Front-End Developer @",
-      key: 0,
+      key: "Dropsher",
       duration: "NOV 2022 - FEB 2023",
       desc: [
         "Desarrollé parte de la interfaz gráfica de la WebApp basada en la tecnología Drag & Drop.",
