@@ -5,22 +5,25 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Credits from "./components/Credits";
 import NavBar from "./components/NavBar";
+import { LanguageProvider } from "./components/LanguageContext";
 import "./App.css";
 import "./styles/Global.css";
 import "rsuite/dist/styles/rsuite-default.css";
 
 function App() {
   return (
-    <div className="App">
-      <NavBar></NavBar>
-      <div id="content">
-        <Intro></Intro>
-        <About></About>
-        <Experience></Experience>
-        <Projects></Projects>
-        <Credits></Credits>
+    <LanguageProvider>
+      <div className="App">
+        <NavBar></NavBar>
+        <div id="content">
+          <Intro></Intro>
+          <About></About>
+          <Experience></Experience>
+          <Projects></Projects>
+          <Credits></Credits>
+        </div>
       </div>
-    </div>
+    </LanguageProvider>
   );
 }
 
