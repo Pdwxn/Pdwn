@@ -13,7 +13,7 @@ const es = {
     },
     about: {
     title: "Acerca de mí",
-    description: "Soy un <b>Front-end Developer</b>, me he logrado desempeñar como <b>Full-Stack Developer</b> en mi ultimo puesto de trabajo en la creación de una <b>WebApp</b> tipo <b>CRM</b>. Actualmente me encuentro aprendiendo mucho más respecto al mundo del <b>desarrollo de software</b>.",
+    description: "Soy un <b>Front-end Developer</b>, me he logrado desempeñar como <b>Full-Stack Developer</b> en mi ultimo puesto de trabajo con la creación de una <b>WebApp</b> tipo <b>CRM</b>. Actualmente me encuentro aprendiendo mucho más respecto al mundo del <b>desarrollo de software</b>.",
     extra: "Además soy <b>Diseñador Gráfico</b> con enfoque en las <b>interfaces web</b> y la <b>experiencia de usuario</b>. Fuera del trabajo suelo interesarme en proyectos pequeños, la creación de contenido (streaming) y videojuegos.",
     techTitle: "Estas son las tecnologías que más suelo utilizar:",
     tech: [
