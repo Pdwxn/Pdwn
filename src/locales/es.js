@@ -8,7 +8,7 @@ const es = {
     intro: {
       greeting: "¿Hey, que tal?",
       description: "Suelo crear cositas interesantes.",
-      role: "Soy un Front-end Developer viviendo en LATAM. Tengo un gran interés por la creación de productos de software de gran escala y alto impacto.",
+      role: "Soy un Front-end Developer de LATAM. Tengo un gran interés por la creación de productos de software de gran escala y alto impacto.",
       contact: " ¡Hablemos!",
     },
     about: {
