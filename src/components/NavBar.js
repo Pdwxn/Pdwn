@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import EmailRoundedIcon from "@material-ui/icons/EmailRounded";
+import LibraryBooksRoundedIcon from '@material-ui/icons/LibraryBooksRounded';
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import "../styles/NavBar.css";
@@ -25,8 +26,11 @@ const NavBar = () => {
             <Nav.Link href="#projects">{texts.nav.projects}</Nav.Link>
           </Nav>
           <Nav className="ml-auto">
-            <Nav.Link href="mailto:pdwxn@protonmail.com">
+            <Nav.Link href="mailto:pdwxn@protonmail.com " alt="email">
               <EmailRoundedIcon style={{ fontSize: 20 }} />
+            </Nav.Link>
+            <Nav.Link href="https://drive.proton.me/urls/0CC9AKQMH4#AEKrRazWdJJH" target="_blank">
+              <LibraryBooksRoundedIcon style={{ fontSize: 19 }} />
             </Nav.Link>
             <Nav.Link href="https://github.com/Pdwxn" target="_blank">
               <GitHubIcon style={{ fontSize: 19 }} />
