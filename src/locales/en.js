@@ -14,7 +14,7 @@ const en = {
     about: {
     title: "About me",
     description: "I'm a <b>Front-end Developer</b>. I worked as a <b>Full-Stack Developer</b> in my last job, creating a <b>WebApp</b> for <b>CRM</b>. I'm currently learning much more about the world of <b>software development</b>.",
-    extra: "I'm also a <b>Graphic Designer</b> focused on <b>web interfaces</b> and <b>user experience</b>. Outside of work, I'm interested in small projects, content creation (streaming), and video games.",
+    extra: "I'm also a <b>Graphic Designer</b> focused on <b>web interfaces</b> and <b>user experience</b>.",
     techTitle: "These are the technologies I use the most:",
     tech: [
       "Typescript",

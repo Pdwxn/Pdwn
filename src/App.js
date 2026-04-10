@@ -20,7 +20,7 @@ function App() {
           <About></About>
           <Experience></Experience>
           <Projects></Projects>
-          <Credits></Credits>
+          {/* <Credits></Credits> */}
         </div>
       </div>
     </LanguageProvider>

@@ -11,17 +11,52 @@ function Projects() {
   const { language } = useLanguage();
 
   const spotlightProjects = {
+    "AI Cover Letter Generator": {
+      title: "AI Cover Letter Generator ",
+      desc:
+        language === "es"
+          ? "Es una web app que genera cartas de presentación personalizadas en segundos."
+          : "It's a web app that generates personalized cover letters in seconds.",
+      techStack: "Next.js 14 · TypeScript · Tailwind CSS · Groq API (llama-3.1-8b-instant)",
+      link: "https://github.com/Pdwxn/Cover-letter-ai",
+      open:
+        "https://cover-letter-ai-zeta.vercel.app/",
+      image: "/assets/cover-letter.png",
+    },
+    "Auth Transparency": {
+      title: "Auth Transparency",
+      desc:
+        language === "es"
+          ? "Es una web app educativa que muestra en tiempo real qué datos personales recibe cualquier aplicación cuando usas el login con un proveedor externo (Google, GitHub o Discord)."
+          : "It's an educational web app that shows in real time what personal data any app receives when you log in using an external provider (Google, GitHub, or Discord).",
+      techStack: "Next.js 15 · TypeScript · Tailwind CSS · NextAuth",
+      link: "https://github.com/Pdwxn/auth-transparency",
+      open:
+        "https://auth-transparency.vercel.app/",
+      image: "/assets/auth.png",
+    },
     "Weather App": {
       title: "Weather App",
       desc:
         language === "es"
           ? "Es una aplicación del clima que muestra información en tiempo real, con una interfaz sencilla y fácil de usar."
-          : "It’s a weather app that shows real-time information with an easy-to-use interface.",
-      techStack: "React.js, Javascript, HTML/CSS",
+          : "It's a weather app that shows real-time information with an easy-to-use interface.",
+      techStack: "React.js · Javascript · HTML/CSS",
       link: "https://github.com/Pdwxn/weather-app-reactjs",
       open:
         "https://weather-app-reactjs-git-features-refactor-pdwxns-projects.vercel.app/",
       image: "/assets/weatherapp.png",
+    },
+    "AI Code Reviewer": {
+      title: "AI Code Reviewer",
+      desc:
+        language === "es"
+          ? "Es una herramienta web que permite analizar, mejorar y entender código en tiempo real mediante inteligencia artificial."
+          : "It's a web-based tool that uses artificial intelligence to analyze, improve, and understand code in real time.",
+      techStack: "Next.js 14 · TypeScript · Tailwind CSS · Groq API (Qwen 3 32B)",
+      link: "https://github.com/Pdwxn/code-reviewer-ai",
+      open: "https://code-reviewer-ai-ten.vercel.app/",
+      image: "/assets/reviewer.png",
     },
     CardStone: {
       title: "CardStone",
@@ -29,32 +64,43 @@ function Projects() {
         language === "es"
           ? "Una aplicación que te permite conocer las más de 3000 cartas que existen en Hearthstone."
           : "An application that allows you to know the more than 3,000 cards that exist in Hearthstone.",
-      techStack: "React.js, Typescript, TailwindCSS",
+      techStack: "React.js · Typescript · TailwindCSS",
       link: "https://github.com/Pdwxn/CardStone",
       open: "https://card-stone.vercel.app/",
       image: "/assets/cardstone.png",
-    },
-    "Wave Box App": {
-      title: "Wave Box App",
-      desc:
-        language === "es"
-          ? "Es una aplicación de películas que permite buscar información, calificar películas y crear listas favoritas."
-          : "It’s a movie app that allows you to search for information, rate movies, and create favorite lists.",
-      techStack: "React.js, Typescript, TailwindCSS",
-      link: "https://github.com/Pdwxn/wavebox-app-reactjs",
-      open: "https://wavebox-app-reactjs.vercel.app/",
-      image: "/assets/wave-box.png",
     },
     // Agrega más proyectos destacados aquí...
   };
 
   const projects = {
+    "AI Cover Letter Generator": {
+      title: "AI Cover Letter Generator ",
+      desc:
+        language === "es"
+          ? "Es una web app que genera cartas de presentación personalizadas en segundos."
+          : "It's a web app that generates personalized cover letters in seconds.",
+      techStack: "Next.js 14 · TypeScript · Tailwind CSS · Groq API (llama-3.1-8b-instant)",
+      link: "https://github.com/Pdwxn/Cover-letter-ai",
+      open:
+        "https://cover-letter-ai-zeta.vercel.app/",
+    },
+    "Auth Transparency": {
+      title: "Auth Transparency",
+      desc:
+        language === "es"
+          ? "Es una web app educativa que muestra en tiempo real qué datos personales recibe cualquier aplicación cuando usas el login con un proveedor externo (Google, GitHub o Discord)."
+          : "It's an educational web app that shows in real time what personal data any app receives when you log in using an external provider (Google, GitHub, or Discord).",
+      techStack: "Next.js 15 · TypeScript · Tailwind CSS · NextAuth",
+      link: "https://github.com/Pdwxn/auth-transparency",
+      open:
+        "https://auth-transparency.vercel.app/",
+    },
     "Weather App": {
       desc:
         language === "es"
           ? "Es una aplicación del clima que muestra información en tiempo real, con una interfaz sencilla y fácil de usar."
-          : "It’s a weather app that shows real-time information with an easy-to-use interface.",
-      techStack: "React.js, Javascript, HTML/CSS",
+          : "It's a weather app that shows real-time information with an easy-to-use interface.",
+      techStack: "React.js · Javascript · HTML/CSS",
       link: "https://github.com/Pdwxn/weather-app-reactjs",
       open:
         "https://weather-app-reactjs-git-features-refactor-pdwxns-projects.vercel.app/",
@@ -64,45 +110,27 @@ function Projects() {
         language === "es"
           ? "Una aplicación que permite almacenar y llevar un registro de viajes, con una interfaz intuitiva y amigable."
           : "An app that allows you to store and track your trips, with an intuitive and friendly interface.",
-      techStack: "React.js, Typescript, HTML / CSS",
+      techStack: "React.js · Typescript · HTML / CSS",
       link: "https://github.com/Pdwxn/worldwanderlog-app-reactjs",
       open: "https://worldwanderlog-app-reactjs.vercel.app/",
     },
-    "Wave Box App": {
+    "AI Code Reviewer": {
       desc:
         language === "es"
-          ? "Es una aplicación de películas que permite buscar información, calificar películas y crear listas favoritas."
-          : "It’s a movie app that allows you to search for information, rate movies, and create favorite lists.",
-      techStack: "React.js, Typescript, HTML / CSS",
-      link: "https://github.com/Pdwxn/wavebox-app-reactjs",
-      open: "https://wavebox-app-reactjs.vercel.app/",
+          ? "Es una herramienta web que permite analizar, mejorar y entender código en tiempo real mediante inteligencia artificial."
+          : "It's a web-based tool that uses artificial intelligence to analyze, improve, and understand code in real time.",
+      techStack: "Next.js 14 · TypeScript · Tailwind CSS · Groq API (Qwen 3 32B)",
+      link: "https://github.com/Pdwxn/code-reviewer-ai",
+      open: "https://code-reviewer-ai-ten.vercel.app/",
     },
     CardStone: {
       desc:
         language === "es"
           ? "Una aplicación que te permite conocer las más de 3000 cartas que existen en Hearthstone."
           : "An application that allows you to know the more than 3,000 cards that exist in Hearthstone.",
-      techStack: "Javascript, HTML/CSS",
+      techStack: "React.js · Typescript · HTML/CSS",
       link: "https://github.com/Pdwxn/CardStone",
       open: "https://card-stone.vercel.app/",
-    },
-    "Currency Converter App": {
-      desc:
-        language === "es"
-          ? "Es una aplicación para convertir divisas de manera rápida y precisa, utilizando la API 'frankfurter.app'."
-          : "It’s an app to quickly and accurately convert currencies using the 'frankfurter.app' API.",
-      techStack: "Javascript, HTML/CSS",
-      link: "https://github.com/Pdwxn/currency-converter",
-      open: "https://currency-converter-ecru.vercel.app/",
-    },
-    "React Quiz": {
-      desc:
-        language === "es"
-          ? "Es un quiz interactivo sobre React.js. Ofrece una interfaz intuitiva y utiliza useReducer para gestionar estados de forma eficiente y clara."
-          : "It’s an interactive quiz about React.js. It offers an intuitive interface and uses useReducer to efficiently manage states.",
-      techStack: "React.js, Typescript, HTML / CSS",
-      link: "https://github.com/Pdwxn/react-quiz",
-      open: "https://react-quiz-gamma-pied.vercel.app",
     },
   };
 

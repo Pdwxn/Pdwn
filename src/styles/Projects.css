@@ -106,6 +106,10 @@ min-height: 50vh;
   right: unset !important;
   left: 25% !important;
   user-select: none;
+  bottom: 20%; /* Sube el texto un 20% desde abajo */
+  /* O puedes usar: */
+  top: 50%;
+  transform: translateY(-50%); /* Esto lo centra verticalmente */
 }
 
 .carousel-caption h3 {

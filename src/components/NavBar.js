@@ -29,9 +29,9 @@ const NavBar = () => {
             <Nav.Link href="mailto:pdwxn@protonmail.com " alt="email">
               <EmailRoundedIcon style={{ fontSize: 20 }} />
             </Nav.Link>
-            <Nav.Link href="https://drive.proton.me/urls/0CC9AKQMH4#AEKrRazWdJJH" target="_blank">
+            {/* <Nav.Link href="https://drive.proton.me/urls/0CC9AKQMH4#AEKrRazWdJJH" target="_blank">
               <LibraryBooksRoundedIcon style={{ fontSize: 19 }} />
-            </Nav.Link>
+            </Nav.Link> */}
             <Nav.Link href="https://github.com/Pdwxn" target="_blank">
               <GitHubIcon style={{ fontSize: 19 }} />
             </Nav.Link>
