@@ -3,6 +3,10 @@
   --deep-purple: #190717;
   --light-purple: #3E103C;
   --lightest-purple: #5a1857;
+  --surface: #261026;
+  --surface-hover: #341238;
+  --border-soft: rgba(255, 247, 100, 0.14);
+  --shadow-soft: 0 24px 60px rgba(0, 0, 0, 0.28);
   --purple-shadow: rgba(2, 12, 27, 0.7);
   --slate: #a8b2d1;
   --light-slate: #a8b2d1;

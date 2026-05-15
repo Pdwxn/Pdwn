@@ -18,6 +18,7 @@ export default function FadeInSection(props) {
     observer.observe(currentDomRef);
     return () => {
       observer.unobserve(currentDomRef);
+      observer.disconnect();
     };
   }, []);
 
@@ -31,4 +32,3 @@ export default function FadeInSection(props) {
     </div>
   );
 }
-

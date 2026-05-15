@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 90px;
 }
-
-/* Animation */
 
 .fade-in-section {
   opacity: 0;
-  transform: translateY(10vh);
+  transform: translateY(24px);
   visibility: hidden;
-  transition: opacity 0.6s ease-out, transform 1s ease-out;
+  transition: opacity 0.55s ease-out, transform 0.8s ease-out;
   will-change: opacity, visibility;
 }
+
 .fade-in-section.is-visible {
   opacity: 1;
   transform: none;
@@ -20,91 +20,61 @@ html {
 }
 
 .App {
+  min-height: 100vh;
   font-family: "Nunito", sans-serif;
-  background-color: var(--deep-purple);
-  display: flex;
-  margin: auto;
+  color: var(--lightest-slate);
+  background:
+    radial-gradient(circle at top, rgba(90, 24, 87, 0.35), transparent 40%),
+    linear-gradient(180deg, #150515 0%, var(--deep-purple) 100%);
 }
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body {
+  background: var(--deep-purple);
 }
 
 a {
   text-decoration: none !important;
-  color: var(--yellow-bright) !important;
+  color: inherit;
 }
 
 #content {
-  /* padding: 80px 200px; */
-  width: 100vw;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-.rs-steps-horizontal .rs-steps-item-content {
-  text-align: left;
+  width: 100%;
+  overflow-x: clip;
+  padding-bottom: 40px;
 }
 
 ::selection {
-  background: var(--lightest-purple); /* WebKit/Blink Browsers */
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  font-size: calc(10px + 2vmin);
+  background: rgba(255, 247, 100, 0.2);
 }
 
 .section-header {
   display: flex;
-  padding-bottom: 42px;
-  width: 100vw;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
 }
 
 .section-header::after {
   content: "";
-  display: block;
-  width: 300px;
-  margin-top: 39px;
+  flex: 1;
   height: 1px;
-  margin-left: 20px;
-  background-color: var(--lightest-purple);
+  background: linear-gradient(90deg, var(--lightest-purple), transparent);
 }
 
 .section-title {
   font-family: "Nunito", sans-serif;
   color: var(--lightest-slate);
-  font-size: 46px;
-  font-weight: bold;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
 }
 
-@media only screen and (max-width: 600px) {
-  .App {
-    flex-direction: column;
-    padding: 40px 24px;
-  }
-
-  #content {
-    padding: 10px 10px;
-    width: 100%;
+@media only screen and (max-width: 768px) {
+  .section-title {
+    font-size: 30px;
   }
 
   .section-header {
-    width: unset;
-  }
-
-  .section-header::after {
-    display: none;
-  }
-
-  .section-title {
-    font-size: 32px;
+    gap: 12px;
   }
 }

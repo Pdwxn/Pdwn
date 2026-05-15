@@ -3,6 +3,7 @@ import Intro from "./components/Intro";
 import Experience from "./components/Experience";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 import NavBar from "./components/NavBar";
 import { LanguageProvider } from "./components/LanguageContext";
 import "./App.css";
@@ -13,13 +14,14 @@ function App() {
   return (
     <LanguageProvider>
       <div className="App">
-        <NavBar></NavBar>
-        <div id="content">
-          <Intro></Intro>
-          <About></About>
-          <Experience></Experience>
-          <Projects></Projects>
-        </div>
+        <NavBar />
+        <main id="content">
+          <Intro />
+          <About />
+          <Experience />
+          <Projects />
+          <Contact />
+        </main>
       </div>
     </LanguageProvider>
   );

@@ -1,83 +1,22 @@
 #projects {
-  margin: auto;
-  padding-top: 100px;
-max-width: 1000px;
-min-height: 50vh;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 72px 24px 0;
 }
 
-.projects-grid {
+.featured-projects {
   display: grid;
-  grid-template-columns: repeat(3, minmax(300px, 1fr));
-  grid-gap: 10px;
-}
-@media (max-width: 1080px) {
-  .projects-grid {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  }
+  gap: 16px;
 }
 
-.projects-card {
-  position: relative;
-  cursor: default;
-  display: flex;
-  flex-direction: column;
-  /* align-items: flex-start; */
-  position: relative;
-  height: 100%;
-  padding: 2rem 1.75rem;
-  background-color: var(--light-purple);
-  border-radius: 16px;
+.spotlight-projects-desktop {
+  width: 100%;
 }
 
-.projects-card:hover {
-  transform: translateY(-7px);
-  background-color: var(--lightest-purple);
+.spotlight-projects-mobile {
+  display: none;
 }
 
-.card-header {
-  margin-top: -20px;
-  display: flex;
-  padding: 1.25em 0 !important;
-  flex-direction: row;
-  justify-content: space-between;
-  border-bottom: none !important;
-}
-.folder-icon {
-  color: var(--yellow-bright);
-}
-
-.github-icon {
-  margin-top: 6px;
-}
-.github-icon:hover {
-  color: var(--yellow-bright);
-}
-
-.open-icon {
-  margin-left: 10px;
-}
-
-.card-title {
-  font-family: "Nunito", sans-serif;
-  color: var(--lightest-slate);
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.card-desc {
-  font-family: "Nunito", sans-serif;
-  color: var(--slate);
-  font-size: 18px;
-  padding-bottom: 40px;
-}
-
-.card-tech {
-  font-family: "Nunito", sans-serif;
-  color: var(--slate);
-  font-size: 16px;
-}
-
-/* Spotlight carousel */
 .carousel.slide {
   max-width: 1000px;
   margin: 0 auto;
@@ -88,6 +27,7 @@ min-height: 50vh;
   height: 500px;
   border-radius: 24px;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  overflow: hidden;
 }
 
 .carousel-inner:hover {
@@ -95,54 +35,248 @@ min-height: 50vh;
 }
 
 .carousel img {
-  object-fit: contain;
+  object-fit: cover;
   height: 100%;
-  opacity: 0.5;
+  opacity: 0.55;
+}
+
+.caption-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(9, 21, 44, 0.05) 0%, rgba(9, 21, 44, 0.5) 65%, rgba(9, 21, 44, 0.85) 100%);
 }
 
 .carousel-caption {
   font-family: "Nunito", sans-serif;
-  max-width: 500px;
-  right: unset !important;
-  left: 25% !important;
-  user-select: none;
-  bottom: 20%; /* Sube el texto un 20% desde abajo */
-  /* O puedes usar: */
-  top: 50%;
-  transform: translateY(-50%); /* Esto lo centra verticalmente */
+  max-width: 620px;
+  left: 50% !important;
+  right: auto !important;
+  bottom: 14% !important;
+  transform: translateX(-50%);
 }
 
 .carousel-caption h3 {
   font-size: 38px;
-  font-weight: bold;
+  font-weight: 800;
   color: var(--lightest-slate);
 }
 
 .carousel-caption p {
   font-family: "Nunito", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   color: var(--lightest-slate);
+}
+
+.carousel-caption p.carousel-details {
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--slate);
 }
 
 .carousel-caption p.techStack {
   font-family: "Nunito", sans-serif;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 800;
   color: var(--yellow-bright);
+}
+
+.carousel-indicators {
+  bottom: 14px;
 }
 
 .carousel-indicators .active {
   background-color: var(--yellow-bright);
 }
 
+.explore-link {
+  margin-left: auto;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  color: var(--yellow-bright);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.explore-link:hover {
+  color: var(--lightest-slate) !important;
+}
+.featured-project {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 22px;
+  padding: 26px;
+  border: 1px solid var(--border-soft);
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(62, 16, 60, 0.9), rgba(38, 16, 38, 0.92));
+  box-shadow: var(--shadow-soft);
+}
+
+.featured-project--large {
+  min-height: 360px;
+}
+
+.featured-copy h3 {
+  margin: 8px 0 12px;
+  font-size: clamp(1.6rem, 3vw, 2.3rem);
+  color: var(--lightest-slate);
+}
+
+.featured-label,
+.projects-subheader {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--yellow-bright);
+  font-size: 0.78rem;
+}
+
+.featured-description,
+.featured-details {
+  color: var(--slate);
+  line-height: 1.7;
+}
+
+.featured-details {
+  margin-top: 10px;
+}
+
+.featured-media {
+  display: block;
+  align-self: center;
+}
+
+.featured-media img {
+  width: 100%;
+  display: block;
+  border-radius: 18px;
+  border: 1px solid var(--border-soft);
+  box-shadow: var(--shadow-soft);
+}
+
+.projects-subheader {
+  margin: 44px 0 18px;
+}
+
+.project-container {
+  margin-top: 6px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.projects-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: 18px;
+  background: rgba(38, 16, 38, 0.8);
+  border: 1px solid rgba(255, 247, 100, 0.1);
+  transition: transform 0.22s ease, border-color 0.22s ease, background 0.22s ease;
+}
+
+.project-card-link {
+  display: block;
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.projects-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 247, 100, 0.24);
+  background: var(--surface-hover);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+
+.folder-icon {
+  color: var(--yellow-bright);
+}
+
+.card-title {
+  color: var(--lightest-slate);
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.card-desc,
+.card-tech {
+  color: var(--slate);
+  line-height: 1.7;
+}
+
+.card-desc {
+  margin-bottom: 18px;
+}
+
+.card-tech {
+  font-size: 0.95rem;
+}
+
+.card-desc-secondary {
+  margin-top: -8px;
+}
+
+.external-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.github-icon,
+.open-icon {
+  display: inline-flex;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.github-icon:hover,
+.open-icon:hover {
+  transform: translateY(-2px);
+}
+
+@media only screen and (max-width: 900px) {
+  .spotlight-projects-desktop {
+    display: none;
+  }
+
+  .spotlight-projects-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  .spotlight-mobile-image {
+    width: 100%;
+    margin: 10px 0 16px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .spotlight-mobile-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   #projects {
-    height: unset;
-    padding-left: unset;
-    padding-right: unset;
+    padding-top: 48px;
   }
-  .carousel {
-    display: none;
+
+  .explore-link {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 6px;
   }
 }
